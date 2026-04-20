@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text Embedder</title>
+    <title>Text Similarity</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>Text Embedder</h1>
-        <form id="embed-form">
-            <textarea id="text-input" placeholder="Type some text..." rows="4" required></textarea>
-            <button type="submit">Embed</button>
+        <h1>Text Similarity</h1>
+        <form id="similarity-form">
+            <textarea id="text-input-1" placeholder="First text..." rows="4" required></textarea>
+            <textarea id="text-input-2" placeholder="Second text..." rows="4" required></textarea>
+            <button type="submit">Compare</button>
         </form>
         <section id="result" hidden>
             <div id="meta"></div>
-            <pre id="vector"></pre>
+            <div id="similarity"></div>
         </section>
     </main>
     <script src="script.js"></script>
